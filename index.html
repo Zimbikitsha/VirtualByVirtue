@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>MyApp</title>
+
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="weather-current-city" id="current-city"></h1>
+            <p class="weather-current-details">
+              <span id="date-and-time"></span>
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-current-temperature">
+            <span id="weather-temperature-icon"></span
+            ><span class="weather-temperature-value" id="temperature">24</span
+            ><span class="weather-temperature-unit">°C</span>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/Zimbikitsha" target="_blank"
+            >Zimasa Bikitsha</a
+          >
+          and is on
+          <a
+            href=https://github.com/Zimbikitsha/VirtualByVirtue
+            target="_blank"
+          >
+            GitHub</a
+          >
+          and hosted on
+          <a href="" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
